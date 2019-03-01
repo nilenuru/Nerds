@@ -24,6 +24,13 @@ img {
   height: auto;
 }
 
+.big-container {
+  width: 1440px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  margin: 0 auto;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -40,9 +47,6 @@ img {
 
 .main-header {
   background-color: #eeeeee;
-
-  /* Временно для демонстрации */
-  height: 50px;
 }
 
 .slider {
@@ -195,7 +199,81 @@ img {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
+.main-navigation {
+  position: relative;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 49px;
+}
 .site-navigation,
-.buy-navigation {
+.kart-navigation {
   list-style: none;
+}
+
+.site-navigation a,
+.kart-navigation a {
+  display: block;
+  color: #000000;
+}
+
+.main-navigation {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 63px;
+  margin-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.site-navigation {
+  display: flex;
+  padding-left: 362px;
+}
+
+.site-navigation li {
+  padding-right: 57px;
+}
+
+.kart-navigation {
+  position: relative;
+  max-width: 200px;
+}
+
+.kart a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-image: url("../img/cart-icon.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+.advantages {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 140px;
+  padding-right: 200px;
+  padding-top: 252px;
+  padding-bottom: 80px;
+}
+
+.advantages-item {
+
+  max-width: 300px;
+}
+
+.web-site {
+  position: absolute;
+  content: "";
+  background-image: url("../img/illustration-1.png");
+  width: 300px;
+  height: 146px;
+  top: 80px;
 }
