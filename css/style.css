@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -51,7 +50,6 @@ img {
 
 .slider {
   position: relative;
-
   background-color: #eeeeee;
 }
 
@@ -60,10 +58,8 @@ img {
   left: 50%;
   bottom: 104px;
   z-index: 100;
-
   width: 160px;
   height: 18px;
-
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
@@ -76,31 +72,25 @@ img {
   width: 18px;
   height: 18px;
   padding: 8px;
-
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-controls label::after {
   content: "";
-
   position: absolute;
   top: 8px;
   left: 8px;
   z-index: 1;
-
   width: 18px;
   height: 18px;
-
   background: #ffffff;
-
   border-radius: 50%;
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -159,7 +149,6 @@ img {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
-
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -175,14 +164,12 @@ img {
   display: block;
   width: 240px;
   padding: 13px 0;
-
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -257,6 +244,7 @@ img {
 .advantages {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 140px;
   padding-right: 200px;
@@ -286,7 +274,7 @@ img {
   top: 80px;
 }
 
-.presentation::after{
+.presentation::after {
   position: absolute;
   content: "";
   background-image: url("../img/illustration-3.png");
@@ -295,8 +283,23 @@ img {
   top: 80px;
 }
 
-.button-pre {
-  display: inline-block;
+.button-web {
+  max-width: 160px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+.button-apps {
+  max-width: 160px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  background-color: #00ca74;
+  color: #ffffff;
+}
+
+.button-presentation {
   max-width: 160px;
   padding-top: 19px;
   padding-bottom: 18px;
@@ -304,19 +307,19 @@ img {
   color: #ffffff;
 }
 
-.button-pre {
-  display: inline-block;
-  max-width: 160px;
-  padding-top: 19px;
-  padding-bottom: 18px;
-  background-color: #efc84a;
-  color: #ffffff;
+.button-apps:hover,
+.button-apps:focus {
+  background-color: #00bc6c;
 }
-.button-pre {
-  display: inline-block;
-  max-width: 160px;
-  padding-top: 19px;
-  padding-bottom: 18px;
-  background-color: #efc84a;
-  color: #ffffff;
+
+.button-apps:active {
+  background-color: #00aa62;
 }
+
+.button-presentation:hover,
+.button-presentation:focus {
+  background-color: #eab534;
+}
+
+.button-presentation:active {
+  background-color: #e5a722;
