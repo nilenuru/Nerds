@@ -196,7 +196,8 @@ img {
   top: 49px;
 }
 .site-navigation,
-.kart-navigation {
+.kart-navigation,
+.working {
   list-style: none;
 }
 
@@ -340,19 +341,31 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 680px;
+  color: #283136;
 
+}
 
+.possibility-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .about {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  padding-right: 140px;
 }
 
 .accuracy {
   display: flex;
   flex-wrap: wrap;
   max-width: 380px;
+}
+
+.performance {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
 }
