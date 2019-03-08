@@ -197,7 +197,8 @@ img {
 }
 .site-navigation,
 .kart-navigation,
-.working {
+.working,
+.partner-list {
   list-style: none;
 }
 
@@ -259,7 +260,7 @@ img {
   max-width: 300px;
 }
 
-.web-site::after {
+.web-site::before {
   position: absolute;
   content: "";
   background-image: url("../img/illustration-1.png");
@@ -268,7 +269,7 @@ img {
   top: 80px;
 }
 
-.apps::after {
+.apps::before {
   position: absolute;
   content: "";
   background-image: url("../img/illustration-2.png");
@@ -277,7 +278,7 @@ img {
   top: 80px;
 }
 
-.presentation::after {
+.presentation::before {
   position: absolute;
   content: "";
   background-image: url("../img/illustration-3.png");
@@ -328,44 +329,88 @@ img {
   background-color: #e5a722;
 }
 
-.principle {
+.contacts {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   flex-wrap: wrap;
+  padding-top: 40px;
   padding-left: 140px;
   padding-right: 140px;
+  padding-bottom: 76px;
 }
 
-.possibility {
+.ability {
   display: flex;
   flex-wrap: wrap;
   max-width: 680px;
+  padding-top: 40px;
+}
+
+.accuracy-item {
   color: #283136;
-
 }
 
-.possibility-item {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.about {
+.ability h2 {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+}
+
+.ability-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.ability h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .accuracy {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   max-width: 380px;
+  margin: 0;
+  padding: 0;
+  padding-top: 250px;
 }
 
-.performance {
-  font-size: 16px;
+.accuracy::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/nerds-illustration.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 208px;
+}
+
+.percent-item {
+  max-width: 360px;
+  font-size: 45px;
+  line-height: 10px;
   font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
+  text-align: left;
+  padding-bottom: 27px;
+}
+
+.performance-year {
+  margin: 0;
+  padding: 0;
+  padding-top: 41px;
+  padding-bottom: 49px;
+}
+
+.partner {
+  display: flex;
 }
