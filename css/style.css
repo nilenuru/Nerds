@@ -30,6 +30,7 @@ img {
           box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
   margin: 0 auto;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -250,6 +251,7 @@ img {
   padding-right: 200px;
   padding-top: 252px;
   padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .advantages-item {
@@ -323,3 +325,34 @@ img {
 
 .button-presentation:active {
   background-color: #e5a722;
+}
+
+.principle {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.possibility {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 680px;
+
+
+}
+
+.about {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  padding-right: 140px;
+}
+
+.accuracy {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+}
