@@ -209,13 +209,12 @@ img {
 }
 
 .main-navigation {
-  padding-left: 140px;
-  padding-right: 140px;
-  padding-top: 63px;
-  margin-bottom: 37px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 63px;
 }
 
 .site-navigation {
@@ -250,7 +249,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 140px;
-  padding-right: 200px;
+  padding-right: 286px;
   padding-top: 252px;
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
@@ -340,14 +339,8 @@ img {
 }
 
 .ability {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 680px;
-  padding-top: 40px;
-}
-
-.accuracy-item {
-  color: #283136;
+  padding-top: 25px;
 }
 
 .ability h2 {
@@ -359,12 +352,12 @@ img {
   padding-bottom: 35px;
 }
 
-.ability-item {
+.ability p {
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
   margin: 0;
-  padding: 0;
+  padding-bottom: 47px;
 }
 
 .ability h3 {
@@ -372,6 +365,12 @@ img {
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.working li { 
+  padding-bottom: 30px;
 }
 
 .accuracy {
@@ -381,18 +380,27 @@ img {
   max-width: 380px;
   margin: 0;
   padding: 0;
-  padding-top: 250px;
+}
+
+.accuracy-item {
+  color: #283136;
 }
 
 .accuracy::before {
-  position: absolute;
   content: "";
-  background-image: url(../img/nerds-illustration.png);
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+  background-image: url("../img/nerds-illustration.png");
   width: 360px;
   height: 208px;
+}
+
+.accuracy h3 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  padding-top: 41px;
+  padding-bottom: 49px;
+  text-transform: uppercase;
 }
 
 .percent-item {
@@ -402,13 +410,6 @@ img {
   font-weight: 700;
   text-align: left;
   padding-bottom: 27px;
-}
-
-.performance-year {
-  margin: 0;
-  padding: 0;
-  padding-top: 41px;
-  padding-bottom: 49px;
 }
 
 .partner {
