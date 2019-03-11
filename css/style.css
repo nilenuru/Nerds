@@ -202,7 +202,9 @@ img {
 .kart-navigation,
 .working,
 .partner-list,
-.social {
+.social,
+.price-item,
+.result-list {
   list-style: none;
 }
 
@@ -743,4 +745,78 @@ img {
 
 .button-modal {
   padding-left: 100px;
+}
+
+.header-catalog {
+  max-height: 355px;
+}
+
+.header-catalog h2 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 82px;
+  padding-left: 357px;
+  padding-right: 357px;
+  padding-bottom: 116px;
+  color: #000000;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.price h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.price span {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  padding-top: 4px;
+  padding-left: 280px;
+}
+
+.price-item {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-left: 267px;
+  padding-right: 54px;
+}
+
+.price-item a {
+  color: #000000;
+}
+
+.sorting-arrow {
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-left: 400px;
 }
