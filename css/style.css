@@ -201,7 +201,8 @@ img {
 .site-navigation,
 .kart-navigation,
 .working,
-.partner-list {
+.partner-list,
+.social {
   list-style: none;
 }
 
@@ -400,12 +401,23 @@ img {
 }
 
 .working li {
+  position: relative;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-left: 35px;
+}
+
+.working li:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  top: 38px;
+  left: 0;
 }
 
 .accuracy {
@@ -532,4 +544,92 @@ img {
 
 .map {
   padding-top: 80px;
+}
+
+.main-footer {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+.main-footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  background-color: #e1e1e1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.button-vk {
+    display: block;
+  width: 79px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-fb {
+  width: 79px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-inst {
+  width: 79px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-vk:hover,
+.button-fb:hover,
+.button-inst:hover {
+  background-color: #e74246;
+  border-radius: 50%;
+}
+
+
+.button-vk:active path,
+.button-fb:active path,
+.button-inst:active path {
+  opacity: 0.3;
+  background-color: #d7373b;
+  border-radius: 50%;
+}
+.invitation {
+  padding-right: 216px;
+}
+
+.invitation h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.invitation p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
 }
