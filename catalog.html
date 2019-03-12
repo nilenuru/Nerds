@@ -63,41 +63,57 @@
         </section>
         <section class="filter">
           <form class="view" action="index.html" method="post">
+            <div class="price-control">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-control-item range-control-min"></div>
+              <div class="range-control-item range-control-max"></div>
+            </div>
+            <div class="control-input">
+              <label for="min">От
+                <input class="min" type="text" name="min" id="min" value="">
+              </label>
+              <label for="max">До
+                <input class="max" type="text" name="max" id="max" value="">
+              </label>
+
+            </div>
             <div class="filter-item-radio">
               <h2>Сетка</h2>
               <div class="radio">
-                <input class="radio-disabled visually-hidden filter-input-radio"  type="radio" id="adaptive" name="adaptive" checked>
-                <label for="adaptive">Слайдер</label>
+                <input class="radio-disabled visually-hidden filter-input-radio" type="radio" id="adaptive" name="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
               </div>
               <div class="radio">
-                <input class="radio-disabled visually-hidden filter-input-radio"  type="radio" id="fixed" name="fixed">
+                <input class="radio-disabled visually-hidden filter-input-radio" type="radio" id="fixed" name="fixed">
                 <label for="fixed">Фиксированная</label>
               </div>
               <div class="radio">
-                <input class="radio-disabled visually-hidden filter-input-radio"  type="radio" id="rubber" namrubbere="rubber">
+                <input class="radio-disabled visually-hidden filter-input-radio" type="radio" id="rubber" namrubbere="rubber">
                 <label for="rubber">Резиновая</label>
               </div>
             </div>
             <div class="filter-item-checkbox">
               <h2>Особенности</h2>
               <div class="checkbox">
-                <input class="checkbox-disabled visually-hidden filter-input-checkbox"  type="checkbox" id="slider" name="slider" checked>
+                <input class="checkbox-disabled visually-hidden filter-input-checkbox" type="checkbox" id="slider" name="slider" checked>
                 <label for="slider">Слайдер</label>
               </div>
               <div class="checkbox">
-                <input class="checkbox-disabled visually-hidden filter-input-checkbox"  type="checkbox" id="advantage" name="advantage" checked>
-                <label for="advantage">Преимущества</label>
+                <input class="checkbox-disabled visually-hidden filter-input-checkbox" type="checkbox" id="advantage" name="advantage" checked>
+                <label for="advantage">Блок преимуществ</label>
               </div>
               <div class="checkbox">
-                <input class="checkbox-disabled visually-hidden filter-input-checkbox"  type="checkbox" id="news" name="news" checked>
+                <input class="checkbox-disabled visually-hidden filter-input-checkbox" type="checkbox" id="news" name="news" checked>
                 <label for="news">Новости</label>
               </div>
               <div class="checkbox">
-                <input class="checkbox-disabled visually-hidden filter-input-checkbox"  type="checkbox" id="passage" name="passage" checked>
+                <input class="checkbox-disabled visually-hidden filter-input-checkbox" type="checkbox" id="passage" name="passage" checked>
                 <label for="passage">Галерея</label>
               </div>
               <div class="checkbox">
-                <input class="checkbox-disabled visually-hidden filter-input-checkbox"  type="checkbox" id="basket" name="basket" checked>
+                <input class="checkbox-disabled visually-hidden filter-input-checkbox" type="checkbox" id="basket" name="basket" checked>
                 <label for="basket">Корзина</label>
               </div>
             </div>
