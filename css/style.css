@@ -686,6 +686,7 @@ img {
 }
 
 .modal {
+  display: none;
   position: absolute;
   top: -137px;
   left: 240px;
@@ -810,6 +811,17 @@ img {
   justify-content: space-between;
 }
 
+.filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
 .result-list {
   padding: 0;
   margin: 0;
@@ -818,5 +830,99 @@ img {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  padding-left: 400px;
+  padding-left: 140px;
+}
+
+.filter-item-radio,
+.filter-item-checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  height: 260px;
+}
+
+.filter-item-radio {
+  min-height: 95px;
+  padding-bottom: 57px;
+}
+
+.filter-item-checkbox {
+  min-height: 176px;
+}
+
+.filter-item-radio h2,
+.filter-item-checkbox h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 27px;
+}
+
+.radio label,
+.checkbox label {
+  position: relative;
+  padding-left: 37px;
+}
+
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/radio-on.png");
+  background-repeat: no-repeat;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.radio-disabled:checked:disabled + label::after {
+  background-image: url("../img/radio-on-disabled.png");
+}
+
+.radio-disabled:disabled + label::after {
+  background-image: url("../img/radio-off-disabled.png");
+}
+
+.filter-input-radio + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/radio-off.png");
+  background-repeat: no-repeat;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  color: #6a6a6a;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  left: 0;
+  width: 27px;
+  height: 23px;
+}
+
+.checkbox-disabled:checked:disabled + label::after {
+  background-image: url("../img/checkbox-on-disabled.png");
+}
+
+.checkbox-disabled:disabled + label::after {
+  background-image: url("../img/checkbox-off-disabled.png");
+}
+
+.filter-input-checkbox + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  color: #6a6a6a;
 }
