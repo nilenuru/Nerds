@@ -871,6 +871,7 @@ img {
   width: 260px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 62px;
 }
 
 .control-input .min,
@@ -909,16 +910,17 @@ img {
   flex-direction: column;
   justify-content: space-between;
   width: 260px;
-  height: 260px;
 }
 
+
 .filter-item-radio {
-  min-height: 95px;
+  min-height: 130px;
   padding-bottom: 57px;
 }
 
 .filter-item-checkbox {
-  min-height: 176px;
+  min-height: 220px;
+  padding-bottom: 50px;
 }
 
 .filter-item-radio h2,
@@ -929,7 +931,22 @@ img {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  padding-bottom: 27px;
+}
+
+.radio-buttons,
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 27px;
+}
+
+.radio-buttons {
+  min-height: 93px;
+}
+
+.checkboxes {
+    min-height: 176px;
 }
 
 .radio label,
