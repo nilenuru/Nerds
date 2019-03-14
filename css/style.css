@@ -475,7 +475,7 @@ img {
 
 .partners .container {
   padding: 61px 0 19px;
-  border-bottom: 2px solid #eee
+  border-bottom: 2px solid #eee;
 }
 
 .partners .partners-list {
@@ -814,6 +814,7 @@ img {
 .filter {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .view {
@@ -946,7 +947,7 @@ img {
 }
 
 .checkboxes {
-    min-height: 176px;
+  min-height: 176px;
 }
 
 .radio label,
@@ -1012,4 +1013,57 @@ img {
   width: 27px;
   height: 23px;
   color: #6a6a6a;
+}
+
+.button-push {
+  width: 260px;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.button-push:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+.button-push:focus  {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-switcher {
+  min-width: 450px;
+  padding-left: 400px;
+  padding-bottom: 60px;
+
+}
+
+.page-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-page {
+  width: 50px;
+  cursor: pointer;
+}
+
+.button-page:focus,
+.button-page:active {
+  background-color: #ffffff;
+  box-shadow: none;
+  color: #000000;
+  border: 3px solid #dbdbdb;
+}
+
+.map-index {
+  margin-top: -80px;
+}
+
+.active {
+  background-color: #ffffff;
+  box-shadow: none;
+  color: #000000;
+  border: 3px solid #dbdbdb;
 }
