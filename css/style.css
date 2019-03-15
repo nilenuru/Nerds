@@ -905,6 +905,37 @@ img {
   padding-left: 140px;
 }
 
+.reswult-container {
+
+}
+
+.result-list-item {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 33px;
+}
+
+.result-list-item a::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  background-image: url("../img/browser.png");
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 40px;
+}
+
+.result-list-item a:hover::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  background-image: url("../img/browser-focus.png");
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 40px;
+}
+
+
 .filter-item-radio,
 .filter-item-checkbox {
   display: flex;
@@ -1014,6 +1045,7 @@ img {
   height: 23px;
   color: #6a6a6a;
 }
+
 
 .button-push {
   width: 260px;
