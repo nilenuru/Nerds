@@ -230,12 +230,19 @@ img {
 }
 
 .site-navigation li {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
   padding-right: 57px;
+
 }
 
 .kart-navigation {
   position: relative;
   max-width: 200px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .kart a::before {
@@ -288,7 +295,7 @@ img {
 .web-site::after {
   position: absolute;
   content: "";
-  background-image: url("../img/illustration-1.png");
+  background-image: url("../img/illustration-1.jpg");
   width: 300px;
   height: 146px;
   top: 80px;
@@ -297,7 +304,7 @@ img {
 .apps::after {
   position: absolute;
   content: "";
-  background-image: url("../img/illustration-2.png");
+  background-image: url("../img/illustration-2.jpg");
   width: 300px;
   height: 146px;
   top: 80px;
@@ -306,7 +313,7 @@ img {
 .presentation::after {
   position: absolute;
   content: "";
-  background-image: url("../img/illustration-3.png");
+  background-image: url("../img/illustration-3.jpg");
   width: 300px;
   height: 146px;
   top: 80px;
@@ -547,7 +554,7 @@ img {
 
 .map {
   position: relative;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .main-footer {
@@ -778,6 +785,7 @@ img {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .price span {
@@ -786,6 +794,7 @@ img {
   font-weight: 700;
   padding-top: 4px;
   padding-left: 280px;
+  text-transform: uppercase;
 }
 
 .price-item {
@@ -800,6 +809,7 @@ img {
   padding-top: 5p;
   padding-left: 267px;
   padding-right: 54px;
+  text-transform: uppercase;
 }
 
 .price-item a {
@@ -989,11 +999,11 @@ img {
   cursor: pointer
 }
 
-.hover-item .price:hover {
+.hover-item-price:hover {
   background-color: #e74246
 }
 
-.hover-item .price:active {
+.hover-item-price:active {
   background-color: #d7373b
 }
 
@@ -1128,6 +1138,7 @@ img {
   flex-wrap: wrap;
   min-width: 450px;
   padding-top: 27px;
+  padding-left: 140px;
 }
 
 .buttons-page {
@@ -1175,5 +1186,6 @@ img {
 }
 
 .map-index {
-  padding-top: 80px;
+  position: relative;
+  margin-top: -20px;
 }
